@@ -1,0 +1,11 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a.active {
+  background-color: white !important;
+  color: black !important;
+  border-radius: 5px;
+}
