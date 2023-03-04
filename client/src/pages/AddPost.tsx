@@ -6,7 +6,6 @@ import { PostFormData } from "../interfaces";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../store/store";
 import { addPost } from "../store/actions/post";
-import axios from "axios";
 
 const AddPost = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -16,7 +15,6 @@ const AddPost = () => {
   const {
     register,
     handleSubmit,
-    setError,
     watch,
     formState: { errors },
   } = useForm<PostFormData>();
